@@ -1,12 +1,5 @@
-:root {
-  --blue: #0b18ff;
-  --blue-light: #d6d7ff;
-  --red: #ff0b0b;
-  --yellow: #fffe00;
-}
-
 .container {
-  max-width: 40rem;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -17,13 +10,11 @@
 }
 .app-bar h1 {
   margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 .section-hero {
-  /* background-image: url("/img/jagged-blue-rect.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center; */
   background: url('/img/jagged-blue-rect.svg') no-repeat 50% -10rem;
   background-size: cover;
   color: var(--blue);
@@ -44,6 +35,8 @@
 .section-hero__text {
   background: white;
   margin: 1rem auto;
+  padding: 1rem;
+  max-width: 32rem;
   text-align: center;
 }
 
@@ -55,4 +48,60 @@
 .section-hero__text p {
   font-size: 1.5rem;
   margin: 0;
+}
+
+.section__heading {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--blue);
+  letter-spacing: 0.25rem;
+  position: relative;
+}
+.section__heading:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--yellow);
+  width: 10rem;
+  height: 0.666rem;
+  z-index: -10;
+}
+
+.section-projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.section-about p {
+  color: var(--blue);
+  font-size: 1.25rem;
+}
+
+.page-footer {
+  background: var(--blue);
+  color: var(--blue-light);
+}
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.social-media li a {
+  display: inline-block;
+  padding: 0.5rem;
+  color: var(--blue-light);
+}
+
+.social-media li a:hover {
+  color: white;
 }

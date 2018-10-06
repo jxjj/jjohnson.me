@@ -2,17 +2,16 @@ import React from 'react';
 import './Project.css';
 
 const renderTags = tags =>
-  Array.isArray(tags) ? tags.map((tag, i) => <li key={i}>{tag}</li>) : tags;
+  Array.isArray(tags) ? (
+    tags.map((tag, i) => <li key={i}>{tag}</li>)
+  ) : (
+    <li>{tags}</li>
+  );
 
 const Project = ({ project }) => {
   const { name, blurb, thumbnail, tags } = project;
   return (
     <article className="project">
-      <h1 className="project__name">{name}</h1>
-      <p
-        className="project__blurb"
-        dangerouslySetInnerHTML={{ __html: blurb }}
-      />
       {thumbnail ? (
         <img
           className="project__thumbnail"
@@ -24,7 +23,14 @@ const Project = ({ project }) => {
           {name.substring(0, 1)}
         </div>
       )}
-      <ul className="project__tags">{renderTags(tags)}</ul>
+      <div className="project__info-container">
+        <h1 className="project__name">{name}</h1>
+        <p
+          className="project__blurb"
+          dangerouslySetInnerHTML={{ __html: blurb }}
+        />
+        <ul className="project__tags">{renderTags(tags)}</ul>
+      </div>
     </article>
   );
 };

@@ -4,18 +4,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #0b18ff;
+  --blue-light: #d6d7ff;
+  --red: #ff0b0b;
+  --red-light: #ffdada;
+  --yellow: #fffe00;
+  --font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
+  --condensed-font-family: 'Proxima Nova Extra Condensed',
+    'proxima-nova-extra-condensed', sans-serif;
+  --monospace-font-family: source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--monospace-font-family);
 }
 
 img {
