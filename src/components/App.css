@@ -1,32 +1,58 @@
-.App {
+:root {
+  --blue: #0b18ff;
+  --blue-light: #d6d7ff;
+  --red: #ff0b0b;
+  --yellow: #fffe00;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-bar {
+  background: var(--blue);
+  color: white;
+}
+.app-bar h1 {
+  margin: 0;
+}
+
+.section-hero {
+  /* background-image: url("/img/jagged-blue-rect.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center; */
+  background: url('/img/jagged-blue-rect.svg') no-repeat 50% -10rem;
+  background-size: cover;
+  color: var(--blue);
+}
+
+/* .section-hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.section-hero__image {
+  display: block;
+  max-width: 20rem;
+  margin: auto;
+}
+
+.section-hero__text {
+  background: white;
+  margin: 1rem auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.section-hero__text h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-hero__text p {
+  font-size: 1.5rem;
+  margin: 0;
 }
