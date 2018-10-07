@@ -27,7 +27,6 @@ const ProjectLinks = ({ project }) => {
 };
 
 const handleClick = e => {
-  e.preventDefault();
   const el = e.target.closest('.project');
   el.classList.toggle('is-open');
   console.log(el.classList);
