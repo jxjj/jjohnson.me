@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
+import { uniq } from 'ramda';
 import Project from './Project';
 import projects from '../data/projects';
+
+import './App.css';
+
+const categories = uniq(projects.map(p => p.category));
+
+const ProjectSection = ({ category, projects }) => (
+  <section className={`section section-${category.toLowerCase()}`}>
+    <div className="container">
+      <h1 className="section__heading">{category}</h1>
+      <div className="project-list">
+        {projects.map(proj => (
+          <Project key={proj.name} project={proj} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 class App extends Component {
   render() {
@@ -27,32 +44,39 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="section section-projects">
-          <div className="container">
-            <h1 className="section__heading">Projects</h1>
-            <div className="project-list">
-              {projects.map(proj => (
-                <Project key={proj.name} project={proj} />
-              ))}
-            </div>
-          </div>
-        </section>
+        {categories.reverse().map(catName => (
+          <ProjectSection
+            category={catName}
+            projects={projects.filter(p => p.category === catName)}
+          />
+        ))}
 
         <section className="section section-about">
           <div className="container">
             <h1 className="section__heading">About Me</h1>
+
             <p>
-              I'm a teacher, developer, and Director of Online Learning at the{' '}
-              <a href="http://mcad.edu">
+              I'm a Minneapolis-based educator and web developer, currently at
+              the{' '}
+              <a href="https://mcad.edu">
                 Minneapolis College of Art and Design
               </a>
-              .
+              . There, I explore the intersection of education and technology as
+              the Director of Online Learning, and teach students the magic of
+              mathematics and programming through a fusion of play, problem
+              solving, and collaboration as Adjunct Faculty.
             </p>
 
             <p>
-              I'm a proud Minnesoohhtan with three destructive cats, a wonderful
-              hubby, and an insatiable appetite for seriously good (or even
-              moderately good) pizza.
+              I hold a masters degree in education from the University of
+              Minnesota, and undergraduate degrees in mathematics and computer
+              science.
+            </p>
+
+            <p>
+              Occasionally, I do freelance or pro-bono web development for
+              non-profits, including: the Foundation Fighting Blindness,
+              Forecast Public Art, and the Sustainable Design Blog.
             </p>
           </div>
         </section>

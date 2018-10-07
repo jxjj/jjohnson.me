@@ -20,12 +20,6 @@
   color: var(--blue);
 }
 
-/* .section-hero .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .section-hero__image {
   display: block;
   max-width: 20rem;
@@ -57,6 +51,7 @@
   color: var(--blue);
   letter-spacing: 0.25rem;
   position: relative;
+  z-index: 0;
 }
 .section__heading:before {
   content: '';
@@ -71,9 +66,13 @@
   z-index: -10;
 }
 
-.section-projects .project-list {
+.project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.section-experiments {
+  background: var(--blue-light);
 }
 
 .section-about p {
@@ -104,4 +103,18 @@
 
 .social-media li a:hover {
   color: white;
+}
+
+.App {
+  filter: hue-rotate(0deg);
+  animation: color-rotate 30s infinite;
+}
+
+@keyframes color-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }

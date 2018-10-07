@@ -1,66 +1,61 @@
 .project {
-  --color-text: var(--red);
-  --color-background: var(--red-light);
-  background: var(--color-background);
-  border: 0.125rem solid var(--color-text);
+  --color-text: var(--blue);
+  --color-background: white;
   color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: relative;
+  z-index: 10;
+  padding: 1rem;
   overflow: hidden;
 }
 
-.project:nth-of-type(3n + 3) {
-  --color-text: var(--blue);
-  --color-background: var(--blue-light);
-}
-
-.project:nth-of-type(3n + 2) {
-  --color-text: white;
-  --color-background: var(--blue);
-  border-color: var(--blue);
-}
-/* .project:nth-of-type(4n + 4) {
-  --color-text: black;
-  --color-background: var(--yellow);
-} */
-
 .project__info-container {
-  padding: 1rem;
-  margin-top: 10rem;
+  border: 2px solid var(--color-text);
+  background: var(--color-background);
+  padding: 1.25rem;
+  height: 100%;
 }
 
-.project__name {
-  font-family: var(--condensed-font-family);
-  font-size: 3rem;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 200;
-  position: relative;
-  padding-top: 1rem;
-  margin-top: 1rem;
+.project:hover .project__info-container {
+  display: block;
 }
-.project__name:before {
+
+.project__heading {
+  font-family: var(--condensed-font-family);
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin: 0;
+  position: relative;
+  line-height: 1;
+}
+
+.project__heading:after {
   content: '';
   display: block;
-  width: 3rem;
-  height: 0.125rem;
+  width: 2.5rem;
+  height: 2px;
   background: var(--color-text);
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 1rem 0;
+}
+
+.project__subheading {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .project__blurb {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .project__tags {
   font-size: 0.9rem;
   list-style-type: none;
   padding: 0;
+  display: none;
 }
 .project__tags li {
   margin-right: 0.25rem;
@@ -71,13 +66,13 @@
 }
 
 .project__thumbnail {
-  display: none;
   filter: sepia(100%) hue-rotate(180deg);
-}
-.project:hover .project__thumbnail {
-  filter: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
 }
 
-.project__thumbnail--dark {
-  filter: sepia(100%) invert(100%);
+.project.is-open {
 }
