@@ -1,24 +1,11 @@
 import React, { Component } from 'react';
 import { uniq } from 'ramda';
-import Project from './Project';
+import ProjectSection from './ProjectSection';
 import projects from '../data/projects';
 
 import './App.css';
 
 const categories = uniq(projects.map(p => p.category));
-
-const ProjectSection = ({ category, projects }) => (
-  <section className={`section section-${category.toLowerCase()}`}>
-    <div className="container">
-      <h1 className="section__heading">{category}</h1>
-      <div className="project-list">
-        {projects.map(proj => (
-          <Project key={proj.name} project={proj} />
-        ))}
-      </div>
-    </div>
-  </section>
-);
 
 class App extends Component {
   render() {
@@ -46,6 +33,7 @@ class App extends Component {
 
         {categories.reverse().map(catName => (
           <ProjectSection
+            key={catName}
             category={catName}
             projects={projects.filter(p => p.category === catName)}
           />

@@ -74,5 +74,13 @@
   z-index: -10;
 }
 
-.project.is-open {
+.project__links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.project__links a {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
