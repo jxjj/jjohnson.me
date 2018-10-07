@@ -4,6 +4,7 @@ export default [
     blurb:
       'Randomly generated tree. Repulsive &ldquo;charge&rdquo; on nodes for emergent flattening.',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment10/',
+    git: 'https://github.com/jxjj/exd-a10',
     thumbnail: 'img/thumb-exp-randomtree-800x600.png',
     category: 'Experiments',
     tags: ['p5js']
@@ -12,6 +13,7 @@ export default [
     name: 'Gravity Sandbox',
     blurb: 'Simple simulation of particles',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment7/',
+    git: 'https://github.com/jxjj/gravity-sandbox-experiment',
     thumbnail: 'img/thumb-exp-antigravity-800x600.png',
     category: 'Experiments',
     tags: 'p5js'
@@ -20,6 +22,7 @@ export default [
     name: 'Wave Equation 6',
     blurb: 'Another exploration of the wave equation',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/exercise6/',
+    git: 'https://github.com/jxjj/exd-exercise6',
     thumbnail: 'img/thumb-exp-waves2-800x600.png',
     category: 'Experiments',
     tags: 'p5js'
@@ -27,6 +30,7 @@ export default [
   {
     name: 'Harmonigraph',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment5b/',
+    git: 'https://github.com/jxjj/exd-assignment5b',
     blurb: 'Graphical music experiment. A bit headache inducing.',
     thumbnail: 'img/thumb-exp-harmonigraph-800x600.png',
     category: 'Experiments',
@@ -36,6 +40,7 @@ export default [
     name: 'Time System',
     blurb: 'A complicated clock',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment4/',
+    git: 'https://github.com/jxjj/exd-assignment4',
     thumbnail: 'img/thumb-exp-time4a-800x600.png',
     category: 'Experiments',
     tags: 'p5js'
@@ -44,6 +49,7 @@ export default [
     name: 'Evolving Letters',
     blurb: 'Using randomness and selection to evolve letterforms over time',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment3/',
+    git: 'https://github.com/jxjj/exd-assignment3',
     thumbnail: 'img/thumb-exp-evolvingletters-800x600.png',
     category: 'Experiments',
     tags: 'p5js'
@@ -52,7 +58,7 @@ export default [
     name: 'Wave Equation 2a',
     blurb: 'An exploration of the wave equation',
     url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment2.1/',
-    git: '',
+    git: 'https://github.com/jxjj/exd-a2.1',
     thumbnail: 'img/thumb-exp-waves-800x600.png',
     category: 'Experiments',
     tags: 'p5js'
@@ -89,6 +95,7 @@ export default [
   {
     name: 'Best Banner Contest',
     client: 'Minneapolis College of Art and Design',
+    url: 'http://best-banner.mcad.education',
     blurb:
       'Annual contest where faculty, staff, and students vote for their favorite course banners',
     thumbnail: 'img/thumb-bestbanner2018-800x600.png',
@@ -99,6 +106,7 @@ export default [
     name: 'Sustainable Design Blog',
     client: 'Minneapolis College of Art and Design',
     date: new Date('2014-12-01'),
+    url: 'http://mcadsustainabledesign.com',
     blurb:
       'A blog on sustainability, created for the Minneapolis College of Art and Design',
     thumbnail: 'img/thumb-mcadsdo-800x600.jpg',
@@ -108,6 +116,7 @@ export default [
   {
     name: 'RxArtisans',
     client: 'RxArtisans.com',
+    url: 'http://rxartisans.com',
     date: new Date('2017-09-01'),
     blurb:
       'Landing page for a compounding pharmacy, creating custom pharmaceuticals for doctors and their patients. Plain ole HTML, CSS, and JS',
@@ -119,6 +128,7 @@ export default [
     name: 'ProgStar Research',
     client: 'Foundation Fighting Blindness',
     date: new Date('2014-02-10'),
+    url: 'http://progstar.org',
     blurb: 'News and research about the Stargaardt disease.',
     thumbnail: 'img/thumb-progstarExt-800x600.jpg',
     tags: ['WordPress', 'php', 'js'],
@@ -127,6 +137,7 @@ export default [
   {
     name: 'Public Art Review',
     client: 'Forecast Public Art',
+    url: 'http://forecastpublicart.org',
     date: new Date('2013-02-01'),
     blurb:
       'Forecast Public Art publishes Public Art Review biannually. They provide expertise, inspiration, and support to make meaningful art happen.',
