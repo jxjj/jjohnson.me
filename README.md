@@ -10,4 +10,8 @@ $ npm start
 
 ## Deploying
 
+```
+$ npm run deploy
+```
+
 ## License
