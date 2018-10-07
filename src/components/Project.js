@@ -26,10 +26,17 @@ const ProjectLinks = ({ project }) => {
   );
 };
 
+const handleClick = e => {
+  e.preventDefault();
+  const el = e.target.closest('.project');
+  el.classList.toggle('is-open');
+  console.log(el.classList);
+};
+
 const Project = ({ project }) => {
   const { name, client, blurb, thumbnail, tags } = project;
   return (
-    <article className="project">
+    <article className="project" onClick={handleClick}>
       {thumbnail ? (
         <img
           className="project__thumbnail"
@@ -44,12 +51,14 @@ const Project = ({ project }) => {
       <div className="project__info-container">
         {client && <h2 className="project__subheading">{client}</h2>}
         <h1 className="project__heading">{name}</h1>
-        <ProjectLinks project={project} />
-        <p
-          className="project__blurb"
-          dangerouslySetInnerHTML={{ __html: blurb }}
-        />
-        <ul className="project__tags">{renderTags(tags)}</ul>
+        <div className="project__info-details">
+          <ProjectLinks project={project} />
+          <p
+            className="project__blurb"
+            dangerouslySetInnerHTML={{ __html: blurb }}
+          />
+          <ul className="project__tags">{renderTags(tags)}</ul>
+        </div>
       </div>
     </article>
   );

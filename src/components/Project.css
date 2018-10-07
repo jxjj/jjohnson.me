@@ -1,6 +1,7 @@
 .project {
   --color-text: var(--blue);
   --color-background: white;
+  --color-border: var(--blue-medium);
   color: var(--color-text);
   position: relative;
   z-index: 10;
@@ -9,7 +10,7 @@
 }
 
 .project__info-container {
-  border: 2px solid var(--color-text);
+  border: 2px solid var(--color-border);
   background: var(--color-background);
   padding: 1.25rem;
   height: 100%;
@@ -20,8 +21,8 @@
 }
 
 .project__heading {
-  font-family: var(--condensed-font-family);
-  font-weight: 300;
+  font-family: var(--font-family);
+  font-weight: 800;
   font-size: 2.5rem;
   margin: 0;
   position: relative;
@@ -38,7 +39,8 @@
 }
 
 .project__subheading {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-border);
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -83,4 +85,14 @@
 .project__links a {
   display: inline-block;
   margin-right: 0.5rem;
+}
+
+.project__info-details,
+.project__heading:after {
+  display: none;
+}
+
+.project.is-open .project__info-details,
+.project.is-open .project__heading:after {
+  display: block;
 }
