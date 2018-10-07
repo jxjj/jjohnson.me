@@ -8,12 +8,21 @@
   background: var(--blue);
   color: white;
 }
+.app-bar .container,
+.section-about .container,
+.page-footer .container {
+  padding: 1rem 2rem;
+}
+
 .app-bar h1 {
   margin: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 
+.section {
+  padding: 2rem 0;
+}
 .section-hero {
   background: url('/img/jagged-blue-rect.svg') no-repeat 50% -10rem;
   background-size: cover;
@@ -72,6 +81,24 @@
 .App {
   filter: hue-rotate(0deg);
   animation: color-rotate 30s infinite;
+}
+
+.section-about__img {
+  max-width: 20rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (min-width: 40rem) {
+  .section-about .section__contents {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .section-about__img {
+    margin: 0 2rem 0 0;
+    width: 33%;
+  }
 }
 
 @keyframes color-rotate {
