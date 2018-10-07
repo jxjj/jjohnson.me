@@ -1,12 +1,13 @@
 .project {
   --color-text: var(--blue);
   --color-background: white;
-  --color-border: var(--blue-medium);
+  --color-border: var(--blue-light);
   color: var(--color-text);
   position: relative;
   z-index: 10;
-  padding: 1rem;
+  margin: 0.5rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .project__info-container {
@@ -40,7 +41,7 @@
 
 .project__subheading {
   font-size: 0.9rem;
-  color: var(--color-border);
+  color: var(--color-subheading);
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -69,11 +70,11 @@
 
 .project__thumbnail {
   filter: sepia(100%) hue-rotate(180deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -10;
+  display: none;
+}
+
+.project:hover .project__thumbnail {
+  filter: none;
 }
 
 .project__links {
@@ -93,6 +94,20 @@
 }
 
 .project.is-open .project__info-details,
-.project.is-open .project__heading:after {
+.project.is-open .project__heading:after,
+.project.is-open .project__thumbnail {
   display: block;
+}
+
+.project:before {
+  content: '+';
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.project.is-open:before {
+  content: '–';
 }
