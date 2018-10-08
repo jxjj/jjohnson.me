@@ -10,8 +10,6 @@ $ npm start
 
 ## Deploying
 
-```
-$ npm run deploy
-```
+Hosting via [Netlify](http://netlify.com). Pushing to master branch will automatically redeploy.
 
 ## License
