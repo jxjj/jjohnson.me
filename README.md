@@ -1,6 +1,6 @@
 # jjohnson.me
 
-Website for me (James Johnson)!
+> Website for me (James Johnson)!
 
 ## Development
 
@@ -13,3 +13,5 @@ $ npm start
 Hosting via [Netlify](http://netlify.com). Pushing to master branch will automatically redeploy.
 
 ## License
+
+MIT © James Johnson
