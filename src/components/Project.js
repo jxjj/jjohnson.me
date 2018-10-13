@@ -8,55 +8,43 @@ const renderTags = tags =>
     <li>{tags}</li>
   );
 
-const LinkItem = ({ icon, href }) => (
-  <li>
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      <i className={`fa fa-${icon}`} />
-    </a>
-  </li>
+const Icon = ({ name, href }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <i className={`fa fa-${name}`} />
+  </a>
 );
 
-const ProjectLinks = ({ project }) => {
-  const { url, git } = project;
-  return (
-    <ul className="project__links">
-      {url && <LinkItem icon="external-link" href={url} />}
-      {git && <LinkItem icon="github" href={git} />}
-    </ul>
-  );
-};
-
-const handleClick = e => {
-  const el = e.target.closest('.project');
-  el.classList.toggle('is-open');
-  console.log(el.classList);
-};
+const withLink = ({ text, url }) => <a href={url}>{text}</a>;
 
 const Project = ({ project }) => {
-  const { name, client, blurb, thumbnail, tags } = project;
+  const { name, client, git, blurb, url, thumbnail, tags } = project;
   return (
-    <article className="project" onClick={handleClick}>
-      {thumbnail ? (
+    <article className="project">
+      <a href={url}>
         <img
           className="project__thumbnail"
           src={thumbnail}
           alt={`${name} Thumbnail`}
         />
-      ) : (
-        <div className="project__thumbnail fallback">
-          {name.substring(0, 1)}
-        </div>
-      )}
+      </a>
       <div className="project__info-container">
         {client && <h2 className="project__subheading">{client}</h2>}
-        <h1 className="project__heading">{name}</h1>
+        <h1 className="project__heading">
+          {url ? withLink({ text: name, url }) : name}
+        </h1>
         <div className="project__info-details">
-          <ProjectLinks project={project} />
           <p
             className="project__blurb"
             dangerouslySetInnerHTML={{ __html: blurb }}
           />
-          <ul className="project__tags">{renderTags(tags)}</ul>
+          {tags && <ul className="project__tags">{renderTags(tags)}</ul>}
+          {git && (
+            <ul className="project__links">
+              <li>
+                <Icon name="github" href={git} />
+              </li>
+            </ul>
+          )}
         </div>
       </div>
     </article>
