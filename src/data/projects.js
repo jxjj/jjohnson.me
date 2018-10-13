@@ -97,7 +97,7 @@ export default [
     client: 'Minneapolis College of Art and Design',
     url: 'http://best-banner.mcad.education',
     blurb:
-      'Annual contest where faculty, staff, and students vote for their favorite course banners',
+      'Annual contest where faculty, staff, and students vote for their favorite course banners. App created using MeteorJS.',
     thumbnail: 'img/thumb-bestbanner2018-800x600.png',
     category: 'Side Projects',
     tags: ['react', 'meteor', 'js']
@@ -108,7 +108,7 @@ export default [
     date: new Date('2014-12-01'),
     url: 'http://mcadsustainabledesign.com',
     blurb:
-      'A blog on sustainability, created for the Minneapolis College of Art and Design',
+      'A blog on sustainability and Sustainable Design created for MCAD. Custom WordPress theme.',
     thumbnail: 'img/thumb-mcadsdo-800x600.jpg',
     category: 'Work',
     tags: ['WordPress', 'php', 'js']
@@ -129,7 +129,8 @@ export default [
     client: 'Foundation Fighting Blindness',
     date: new Date('2014-02-10'),
     url: 'http://progstar.org',
-    blurb: 'News and research about the Stargaardt disease.',
+    blurb:
+      'News and research about the Stargaardt disease. Custom WordPress theme.',
     thumbnail: 'img/thumb-progstarExt-800x600.jpg',
     tags: ['WordPress', 'php', 'js'],
     category: 'Work'
@@ -140,7 +141,7 @@ export default [
     url: 'http://forecastpublicart.org',
     date: new Date('2013-02-01'),
     blurb:
-      'Forecast Public Art publishes Public Art Review biannually. They provide expertise, inspiration, and support to make meaningful art happen.',
+      'Forecast Public Art publishes Public Art Review biannually. Custom WordPress theme.',
     thumbnail: 'img/thumb-par-800x600.jpg',
     category: 'Work'
   }

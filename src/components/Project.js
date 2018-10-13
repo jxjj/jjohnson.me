@@ -1,13 +1,6 @@
 import React from 'react';
 import './Project.css';
 
-const renderTags = tags =>
-  Array.isArray(tags) ? (
-    tags.map((tag, i) => <li key={i}>{tag}</li>)
-  ) : (
-    <li>{tags}</li>
-  );
-
 const Icon = ({ name, href }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
     <i className={`fa fa-${name}`} />
@@ -17,7 +10,7 @@ const Icon = ({ name, href }) => (
 const withLink = ({ text, url }) => <a href={url}>{text}</a>;
 
 const Project = ({ project }) => {
-  const { name, client, git, blurb, url, thumbnail, tags } = project;
+  const { name, client, git, blurb, url, thumbnail } = project;
   return (
     <article className="project">
       <a href={url}>
@@ -37,7 +30,6 @@ const Project = ({ project }) => {
             className="project__blurb"
             dangerouslySetInnerHTML={{ __html: blurb }}
           />
-          {tags && <ul className="project__tags">{renderTags(tags)}</ul>}
           {git && (
             <ul className="project__links">
               <li>

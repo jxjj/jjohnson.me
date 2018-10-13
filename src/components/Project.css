@@ -76,8 +76,7 @@
 }
 
 .project__thumbnail {
-  /* filter: sepia(100%) hue-rotate(180deg); */
-  filter: none;
+  filter: sepia(100%) hue-rotate(180deg);
   display: block;
 }
 
