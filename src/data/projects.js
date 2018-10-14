@@ -57,8 +57,8 @@ export default [
   {
     name: 'Wave Equation 2a',
     blurb: 'An exploration of the wave equation',
-    url: 'https://jjohnson136.studio.mcad.edu/exd-projects/assignment2.1/',
-    git: 'https://github.com/jxjj/exd-a2.1',
+    url: 'https://codepen.io/johnsojr/full/JmymEZ/',
+    git: 'https://codepen.io/johnsojr/pen/JmymEZ',
     thumbnail: 'img/thumb-exp-waves-800x600.png',
     category: 'Experiments',
     tags: 'p5js'

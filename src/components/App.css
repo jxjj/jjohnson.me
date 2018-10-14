@@ -101,6 +101,22 @@
   }
 }
 
+.btn {
+  font-size: 1rem;
+  color: var(--blue);
+  display: inline-block;
+  border: 0.125rem solid var(--blue);
+  text-decoration: none;
+  padding: 0.5rem 1em;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--blue);
+  color: white;
+}
+
 @keyframes color-rotate {
   0% {
     filter: hue-rotate(0deg);

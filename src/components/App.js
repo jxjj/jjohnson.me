@@ -27,6 +27,16 @@ class App extends Component {
             <div className="section-hero__text">
               <h2>Hello, I’m James</h2>
               <p>I make things on the web</p>
+              <p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://goo.gl/2RRQHb"
+                  class="btn"
+                >
+                  Résumé
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -85,7 +95,7 @@ class App extends Component {
             <ul className="social-media">
               <li>
                 <a
-                  href="mailto:james_johnson@mcad.edu"
+                  href="mailto:johnsojr@mcad.edu"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
@@ -94,7 +104,7 @@ class App extends Component {
               </li>
               <li>
                 <a
-                  href="http://www.linkedin.com/pub/james-johnson/13/a66/233"
+                  href="https://www.linkedin.com/in/jjohnson-me"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
@@ -103,7 +113,7 @@ class App extends Component {
               </li>
               <li>
                 <a
-                  href="https://github.com/geekydatamonkey"
+                  href="https://github.com/jxjj"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
