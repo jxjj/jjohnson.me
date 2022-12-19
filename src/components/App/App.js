@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { uniq } from 'ramda';
-import ProjectSection from './ProjectSection';
-import projects from '../data/projects';
+import ProjectSection from '../ProjectSection/ProjectSection';
+import projects from '../../data/projects';
 
 import './App.css';
 
