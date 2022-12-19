@@ -1,16 +1,19 @@
-import React from 'react';
-import './Project.css';
+import React from "react";
+import { Project as ProjectType } from "../../types";
+import "./Project.css";
 
-const Icon = ({ name, href }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer">
-    <i className={`fa fa-${name}`} />
+const Icon = (props: { name: string; href: string }) => (
+  <a href={props.href} target="_blank" rel="noopener noreferrer">
+    <i className={`fa fa-${props.name}`} />
   </a>
 );
 
-const withLink = ({ text, url }) => <a href={url}>{text}</a>;
+const withLink = (props: { text: string; url: string }) => (
+  <a href={props.url}>{props.text}</a>
+);
 
-const Project = ({ project }) => {
-  const { name, client, git, blurb, url, thumbnail } = project;
+export const Project = (props: { project: ProjectType }) => {
+  const { name, client, git, blurb, url, thumbnail } = props.project;
   return (
     <article className="project">
       <a href={url}>

@@ -12,11 +12,11 @@
   --red: #ff0b0b;
   --red-light: #ffdada;
   --yellow: #fffe00;
-  --font-family: 'Proxima Nova', 'proxima-nova', sans-serif;
-  --condensed-font-family: 'Proxima Nova Extra Condensed',
-    'proxima-nova-extra-condensed', sans-serif;
+  --font-family: "Proxima Nova", "proxima-nova", sans-serif;
+  --condensed-font-family: "Proxima Nova Extra Condensed",
+    "proxima-nova-extra-condensed", sans-serif;
   --monospace-font-family: source-code-pro, Menlo, Monaco, Consolas,
-    'Courier New', monospace;
+    "Courier New", monospace;
 }
 
 body {
@@ -34,4 +34,16 @@ code {
 
 img {
   max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
