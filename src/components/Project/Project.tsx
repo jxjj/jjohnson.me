@@ -1,13 +1,7 @@
 import React from "react";
 import { Project as ProjectType } from "../../types";
+import * as Icons from "../../icons";
 import "./Project.css";
-
-const Icon = (props: { name: string; href: string }) => (
-  <a href={props.href} target="_blank" rel="noopener noreferrer">
-    <i className={`fa fa-${props.name}`} />
-  </a>
-);
-
 const withLink = (props: { text: string; url: string }) => (
   <a href={props.url}>{props.text}</a>
 );
@@ -36,7 +30,10 @@ export const Project = (props: { project: ProjectType }) => {
           {git && (
             <ul className="project__links">
               <li>
-                <Icon name="github" href={git} />
+                <a href={git} target="_blank" rel="noopener noreferrer">
+                  <Icons.Github />
+                  <span className="sr-only">Github</span>
+                </a>
               </li>
             </ul>
           )}
