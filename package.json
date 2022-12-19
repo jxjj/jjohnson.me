@@ -5,15 +5,15 @@
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gh-pages": "^2.0.1",
-    "husky": "^1.1.1",
-    "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3",
-    "ramda": "^0.25.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "3.0.1",
-    "uuid": "^3.3.2"
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "ramda": "^0.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
