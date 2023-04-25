@@ -14,25 +14,16 @@ export const AboutSection = () => (
         />
         <div className="section-about__bio">
           <p>
-            I&rsquo;m a Minneapolis-based educator and web developer, currently
-            at the{" "}
-            <a href="https://mcad.edu">Minneapolis College of Art and Design</a>
-            . There I explore the intersection of teaching and technology as the
-            Director of Online Learning. For almost 20 years, I&rsquo;ve been
-            teaching students the magic of mathematics and programming through a
-            fusion of play, problem solving, and collaboration.
+            I&rsquo;m a Minneapolis-based web developer and designer, currently
+            at the <a href="http://umn.edu">University of Minnesota</a>. There I
+            work with amazing colleagues making web apps that help people learn.
+            I hold a masters degree in education and undergraduate degrees in
+            mathematics and computer science.
           </p>
-
           <p>
-            I hold a masters degree in education from the University of
-            Minnesota, and undergraduate degrees in mathematics and computer
-            science.
-          </p>
-
-          <p>
-            Occasionally, I do freelance or pro-bono web development for
-            non-profits, including: the Foundation Fighting Blindness, Forecast
-            Public Art, and the Sustainable Design Blog.
+            Outside of work, I enjoy hiking, kayaking, traveling, gardening, and
+            just chilling on the couch with my hubby watching SciFi and eating
+            Fruit Loops.
           </p>
         </div>
       </div>
