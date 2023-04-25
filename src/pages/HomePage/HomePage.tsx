@@ -25,7 +25,7 @@ export const HomePage = () => (
   <div className="App">
     <HeroSection />
 
-    {workProjects.length && (
+    {workProjects.length ? (
       <ProjectSection>
         <ProjectHeader>Work</ProjectHeader>
         <ProjectList>
@@ -34,9 +34,11 @@ export const HomePage = () => (
           ))}
         </ProjectList>
       </ProjectSection>
+    ) : (
+      ""
     )}
 
-    {sideProjects.length && (
+    {sideProjects.length ? (
       <ProjectSection>
         <ProjectHeader>Side Projects</ProjectHeader>
         <ProjectList>
@@ -45,9 +47,11 @@ export const HomePage = () => (
           ))}
         </ProjectList>
       </ProjectSection>
+    ) : (
+      ""
     )}
 
-    {experiments.length && (
+    {experiments.length ? (
       <ProjectSection>
         <ProjectHeader>Experiments</ProjectHeader>
         <ProjectList>
@@ -56,6 +60,8 @@ export const HomePage = () => (
           ))}
         </ProjectList>
       </ProjectSection>
+    ) : (
+      ""
     )}
 
     <AboutSection />
