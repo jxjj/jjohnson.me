@@ -18,7 +18,7 @@ export const projects: Project[] = [
     git: "https://github.com/jxjj/gravity-sandbox-experiment",
     thumbnail: "img/thumb-exp-antigravity-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "Wave Equation 6",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     git: "https://github.com/jxjj/exd-exercise6",
     thumbnail: "img/thumb-exp-waves2-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "Harmonigraph",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     blurb: "Graphical music experiment. A bit headache inducing.",
     thumbnail: "img/thumb-exp-harmonigraph-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "Time System",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     git: "https://github.com/jxjj/exd-assignment4",
     thumbnail: "img/thumb-exp-time4a-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "Evolving Letters",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     git: "https://github.com/jxjj/exd-assignment3",
     thumbnail: "img/thumb-exp-evolvingletters-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "Wave Equation 2a",
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     git: "https://codepen.io/johnsojr/pen/JmymEZ",
     thumbnail: "img/thumb-exp-waves-800x600.png",
     category: "Experiments",
-    tags: "p5js",
+    tags: ["p5js"],
   },
   {
     name: "HyperQuiz",
@@ -145,6 +145,52 @@ export const projects: Project[] = [
     blurb:
       "Forecast Public Art publishes Public Art Review biannually. Custom WordPress theme.",
     thumbnail: "img/thumb-par-800x600.jpg",
+    category: "Work",
+  },
+  {
+    name: "ChimeIn",
+    client: "University of Minnesota",
+    url: "https://chimein.cla.umn.edu",
+    git: "https://github.com/UMN-LATIS/ChimeIn2.0",
+    date: new Date("2023-01-01"),
+    blurb: "ChimeIn is a web-based, real-time student response system.",
+    tags: ["Laravel", "php", "VueJS", "TypeScript"],
+    thumbnail: "https://placehold.it/800x600",
+    category: "Work",
+  },
+  {
+    name: "Z Link Shortener",
+    client: "University of Minnesota",
+    url: "https://z.umn.edu",
+    date: new Date("2023-01-01"),
+    tags: ["Ruby on Rails", "VueJS", "TypeScript"],
+    git: "https://github.com/UMN-LATIS/z",
+    blurb:
+      "Z is a URL shortener and QR code generator for the University of Minnesota.",
+    thumbnail: "https://placehold.it/800x600",
+    category: "Work",
+  },
+  {
+    name: "Camino",
+    client: "University of Minnesota",
+    url: "https://camino.cla.umn.edu/",
+    date: new Date("2023-01-01"),
+    tags: ["Laravel", "PHP", "VueJS", "TypeScript", "MapboxGL"],
+    git: "https://github.com/UMN-LATIS/Camino",
+    blurb: "Camino lets students and instructors create educational tours.",
+    thumbnail: "https://placehold.it/800x600",
+    category: "Work",
+  },
+  {
+    name: "Elevator",
+    client: "University of Minnesota",
+    url: "https://github.com/UMN-LATIS/elevator",
+    date: new Date("2023-01-01"),
+    tags: ["VueJS", "TypeScript", "PHP", "CodeIgniter", "AWS"],
+    git: "https://github.com/UMN-LATIS/elevator",
+    blurb:
+      "Elevator is a digital asset repository system for storing images, videos, documents, 3D models, and more. Users can upload, organize, and share their assets.",
+    thumbnail: "https://placehold.it/800x600",
     category: "Work",
   },
 ];

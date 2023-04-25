@@ -7,8 +7,17 @@ import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 import { ProjectList } from "../../components/ProjectList/ProjectList";
 import { Project } from "../../components/Project/Project";
 import { FooterSection } from "../../components/FooterSection/FooterSection";
+import { type Project as ProjectType } from "../../types";
 
-const workProjects = projects.filter((p) => p.category === "Work");
+const sortProjectsByDate = (a: ProjectType, b: ProjectType) => {
+  // if no date, use today's date
+  const aDate = a.date || new Date();
+  const bDate = b.date || new Date();
+  return bDate.getTime() - aDate.getTime();
+};
+const workProjects = projects
+  .filter((p) => p.category === "Work")
+  .sort(sortProjectsByDate);
 const sideProjects = projects.filter((p) => p.category === "Side Projects");
 const experiments = projects.filter((p) => p.category === "Experiments");
 
