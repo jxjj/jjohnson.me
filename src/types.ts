@@ -1,3 +1,5 @@
+export type Category = "Experiments" | "Side Projects" | "Work";
+
 export interface Project {
   name: string;
   blurb: string;
@@ -5,7 +7,7 @@ export interface Project {
   git?: string;
   client?: string;
   thumbnail: string;
-  category: string;
+  category: Category;
   tags?: string | string[];
   date?: Date;
 }

@@ -1,0 +1,17 @@
+.section-about__img {
+  max-width: 20rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (min-width: 40rem) {
+  .section-about .section__contents {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .section-about__img {
+    margin: 0 2rem 0 0;
+    width: 33%;
+  }
+}

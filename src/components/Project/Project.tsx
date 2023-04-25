@@ -2,6 +2,7 @@ import React from "react";
 import { Project as ProjectType } from "../../types";
 import * as Icons from "../../icons";
 import "./Project.css";
+
 const withLink = (props: { text: string; url: string }) => (
   <a href={props.url}>{props.text}</a>
 );

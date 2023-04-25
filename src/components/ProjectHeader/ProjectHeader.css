@@ -1,0 +1,21 @@
+.project-header {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--blue);
+  letter-spacing: 0.25rem;
+  position: relative;
+  z-index: 0;
+}
+.project-header:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--yellow);
+  width: 10rem;
+  height: 0.666rem;
+  z-index: -10;
+}
