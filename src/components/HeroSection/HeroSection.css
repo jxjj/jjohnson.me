@@ -1,15 +1,19 @@
+.section-hero {
+  background: var(--blue);
+}
+
 .section-hero__image {
   display: block;
-  max-width: 20rem;
+  max-width: 18rem;
   margin: auto;
 }
 
 .section-hero__text {
-  background: white;
   margin: 1rem auto;
   padding: 1rem;
   max-width: 32rem;
   text-align: center;
+  color: #fff;
 }
 
 .section-hero__text h2 {
@@ -20,4 +24,35 @@
 .section-hero__text p {
   font-size: 1.5rem;
   margin: 0;
+}
+
+.section-hero .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.section-hero .btn:hover {
+  color: var(--blue);
+  background: #fff;
+}
+
+.section-hero__wave {
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.section-hero__wave:hover {
+  animation: wave 0.5s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(55deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
 }

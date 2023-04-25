@@ -1,15 +1,7 @@
-.project-section:nth-of-type(3n + 1) {
-  background: var(--blue-light);
-}
-.project-section:nth-of-type(3n + 1) .project__info-container {
-  border-color: var(--blue-medium);
-}
-
-.project-section:nth-of-type(3n + 2) {
-  background: var(--blue-lighter);
+.project-section {
+  background: #ecedf8;
 }
 
 .section-about p {
-  color: var(--blue);
   font-size: 1.25rem;
 }

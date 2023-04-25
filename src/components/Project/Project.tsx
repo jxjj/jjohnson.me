@@ -21,30 +21,32 @@ export const Project = (props: { project: ProjectType }) => {
         />
       </a>
       <div className="project__info-container">
-        {client && <h2 className="project__subheading">{client}</h2>}
-        <h1 className="project__heading">
-          {url ? withLink({ text: name, url }) : name}
-        </h1>
-        <div className="project__info-details">
-          <p className="project__blurb">{blurb}</p>
-          {tags?.length && (
-            <TagList>
-              {tags.map((tag) => (
-                <Tag key={tag}>{tag}</Tag>
-              ))}
-            </TagList>
-          )}
-
-          {git && (
-            <ul className="project__links">
-              <li>
-                <a href={git} target="_blank" rel="noopener noreferrer">
-                  <Icons.Github /> Github
-                </a>
-              </li>
-            </ul>
-          )}
+        <div>
+          {client && <h2 className="project__subheading">{client}</h2>}
+          <h1 className="project__heading">
+            {url ? withLink({ text: name, url }) : name}
+          </h1>
         </div>
+        <p className="project__blurb">{blurb}</p>
+      </div>
+      <div className="project__tech-details">
+        {tags && (
+          <TagList>
+            {tags.map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </TagList>
+        )}
+        {git && (
+          <a
+            href={git}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__git-link"
+          >
+            <Icons.Github /> <span className="sr-only">Github</span>
+          </a>
+        )}
       </div>
     </article>
   );

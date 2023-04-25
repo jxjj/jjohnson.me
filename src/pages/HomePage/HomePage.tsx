@@ -23,40 +23,40 @@ const experiments = projects.filter((p) => p.category === "Experiments");
 
 export const HomePage = () => (
   <div className="App">
-    <header className="app-bar">
-      <div className="container">
-        <h1 className="app-bar__name">James Johnson</h1>
-      </div>
-    </header>
-
     <HeroSection />
 
-    <ProjectSection>
-      <ProjectHeader>Work</ProjectHeader>
-      <ProjectList>
-        {workProjects.map((proj) => (
-          <Project key={proj.name} project={proj} />
-        ))}
-      </ProjectList>
-    </ProjectSection>
+    {workProjects.length && (
+      <ProjectSection>
+        <ProjectHeader>Work</ProjectHeader>
+        <ProjectList>
+          {workProjects.map((proj) => (
+            <Project key={proj.name} project={proj} />
+          ))}
+        </ProjectList>
+      </ProjectSection>
+    )}
 
-    <ProjectSection>
-      <ProjectHeader>Side Projects</ProjectHeader>
-      <ProjectList>
-        {sideProjects.map((proj) => (
-          <Project key={proj.name} project={proj} />
-        ))}
-      </ProjectList>
-    </ProjectSection>
+    {sideProjects.length && (
+      <ProjectSection>
+        <ProjectHeader>Side Projects</ProjectHeader>
+        <ProjectList>
+          {sideProjects.map((proj) => (
+            <Project key={proj.name} project={proj} />
+          ))}
+        </ProjectList>
+      </ProjectSection>
+    )}
 
-    <ProjectSection>
-      <ProjectHeader>Experiments</ProjectHeader>
-      <ProjectList>
-        {experiments.map((proj) => (
-          <Project key={proj.name} project={proj} />
-        ))}
-      </ProjectList>
-    </ProjectSection>
+    {experiments.length && (
+      <ProjectSection>
+        <ProjectHeader>Experiments</ProjectHeader>
+        <ProjectList>
+          {experiments.map((proj) => (
+            <Project key={proj.name} project={proj} />
+          ))}
+        </ProjectList>
+      </ProjectSection>
+    )}
 
     <AboutSection />
     <FooterSection />

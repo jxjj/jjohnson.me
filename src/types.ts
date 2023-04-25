@@ -8,6 +8,6 @@ export interface Project {
   client?: string;
   thumbnail: string;
   category: Category;
-  tags?: string[];
+  tags: string[];
   date?: Date;
 }
