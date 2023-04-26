@@ -7,11 +7,8 @@
 :root {
   --blue: #0b18ff;
   --black: #111;
-  /* --blue-medium: #777aff; */
-  /* --blue-light: #d6d7ff; */
-  /* --blue-lighter: #f2f3ff; */
-  /* --red: #ff0b0b; */
-  /* --red-light: #ffdada; */
+  --blue-light: #d6d7ff;
+  --blue-lighter: #f2f3ff;
   --yellow: #fffe00;
   --font-family: "Proxima Nova", "proxima-nova", sans-serif;
   --condensed-font-family: "Proxima Nova Extra Condensed",
