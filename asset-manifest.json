@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f70317dc.css",
+    "main.js": "/static/js/main.22c3b062.js",
+    "index.html": "/index.html",
+    "static/media/jagged-blue-rect.svg": "/static/media/jagged-blue-rect.e99472451b91ea9af240.svg",
+    "main.f70317dc.css.map": "/static/css/main.f70317dc.css.map",
+    "main.22c3b062.js.map": "/static/js/main.22c3b062.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f70317dc.css",
+    "static/js/main.22c3b062.js"
+  ]
+}
